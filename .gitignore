@@ -17,3 +17,6 @@
 *.idb
 /unidbg-ios/src/test/resources/native/swift/swift_library.o
 /unidbg-ios/src/test/resources/native/swift/swift_library-Swift.h
+/unidbg-android/src/test/resources/bili/
+/unidbg-android/src/test/resources/dianping/
+/unidbg-android/src/test/resources/zuiyou/
