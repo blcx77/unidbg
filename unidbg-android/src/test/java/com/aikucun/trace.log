@@ -1,0 +1,1225 @@
+
+[11:07:03 915][libmx.so 0x0e53c] [7dfbff97] 0x1200e53c: "bl #0x1200d330"
+[11:07:03 920][libmx.so 0x0d330] [30010090] 0x1200d330: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:03 923][libmx.so 0x0d334] [119646f9] 0x1200d334: "ldr x17, [x16, #0xd28]" x16=0x12031000 => x17=0x1200d804
+[11:07:03 926][libmx.so 0x0d338] [10a23491] 0x1200d338: "add x16, x16, #0xd28" x16=0x12031000 => x16=0x12031d28
+[11:07:03 929][libmx.so 0x0d33c] [20021fd6] 0x1200d33c: "br x17" x17=0x1200d804
+[11:07:03 932][libmx.so 0x0d804] [f70f1cf8] 0x1200d804: "str x23, [sp, #-0x40]!" x23=0x12360000 sp=0xe4fff690 => x23=0x12360000 sp=0xe4fff650
+[11:07:03 934][libmx.so 0x0d808] [f65701a9] 0x1200d808: "stp x22, x21, [sp, #0x10]" x22=0x12034000 x21=0x564fabc8 sp=0xe4fff650 => x22=0x12034000 x21=0x564fabc8
+[11:07:03 937][libmx.so 0x0d80c] [f44f02a9] 0x1200d80c: "stp x20, x19, [sp, #0x20]" x20=0x116 x19=0xfffe1640 sp=0xe4fff650 => x20=0x116 x19=0xfffe1640
+[11:07:03 939][libmx.so 0x0d810] [fd7b03a9] 0x1200d810: "stp x29, x30, [sp, #0x30]" x29=0xe4fff6f0 x30=0x1200e540 sp=0xe4fff650 => x29=0xe4fff6f0 x30=0x1200e540
+[11:07:03 941][libmx.so 0x0d814] [fdc30091] 0x1200d814: "add x29, sp, #0x30" sp=0xe4fff650 => x29=0xe4fff680
+[11:07:03 942][libmx.so 0x0d818] [080040f9] 0x1200d818: "ldr x8, [x0]" x0=0xfffe1640 => x8=0xfffe0ef0
+[11:07:03 944][libmx.so 0x0d81c] [f50301aa] 0x1200d81c: "mov x21, x1" x1=0x12026894 => x21=0x12026894
+[11:07:03 945][libmx.so 0x0d820] [c10000b0] 0x1200d820: "adrp x1, #0x12026000" => x1=0x12026000
+[11:07:03 946][libmx.so 0x0d824] [21282791] 0x1200d824: "add x1, x1, #0x9ca" x1=0x12026000 => x1=0x120269ca
+[11:07:03 948][libmx.so 0x0d828] [081940f9] 0x1200d828: "ldr x8, [x8, #0x30]" x8=0xfffe0ef0 => x8=0xfffe00b0
+[11:07:03 949][libmx.so 0x0d82c] [f40302aa] 0x1200d82c: "mov x20, x2" x2=0x564fabc8 => x20=0x564fabc8
+[11:07:03 951][libmx.so 0x0d830] [f30300aa] 0x1200d830: "mov x19, x0" x0=0xfffe1640 => x19=0xfffe1640
+[11:07:03 953][libmx.so 0x0d834] [00013fd6] 0x1200d834: "blr x8" x8=0xfffe00b0 => x30=0x1200d838
+[11:07:03 954][libmx.so 0x0d838] [680240f9] 0x1200d838: "ldr x8, [x19]" x19=0xfffe1640 => x8=0xfffe0ef0
+[11:07:03 956][libmx.so 0x0d83c] [f60300aa] 0x1200d83c: "mov x22, x0" x0=0xef7f56a8 => x22=0xef7f56a8
+[11:07:03 958][libmx.so 0x0d840] [c20000b0] 0x1200d840: "adrp x2, #0x12026000" => x2=0x12026000
+[11:07:03 959][libmx.so 0x0d844] [c30000b0] 0x1200d844: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:03 961][libmx.so 0x0d848] [08c541f9] 0x1200d848: "ldr x8, [x8, #0x388]" x8=0xfffe0ef0 => x8=0xfffe0760
+[11:07:03 962][libmx.so 0x0d84c] [42982791] 0x1200d84c: "add x2, x2, #0x9e6" x2=0x12026000 => x2=0x120269e6
+[11:07:03 969][libmx.so 0x0d850] [63c82791] 0x1200d850: "add x3, x3, #0x9f2" x3=0x12026000 => x3=0x120269f2
+[11:07:03 970][libmx.so 0x0d854] [e00313aa] 0x1200d854: "mov x0, x19" x19=0xfffe1640 => x0=0xfffe1640
+[11:07:03 971][libmx.so 0x0d858] [e10316aa] 0x1200d858: "mov x1, x22" x22=0xef7f56a8 => x1=0xef7f56a8
+[11:07:03 973][libmx.so 0x0d85c] [00013fd6] 0x1200d85c: "blr x8" x8=0xfffe0760 => x30=0x1200d860
+[11:07:03 974][libmx.so 0x0d860] [680240f9] 0x1200d860: "ldr x8, [x19]" x19=0xfffe1640 => x8=0xfffe0ef0
+[11:07:03 980][libmx.so 0x0d864] [f70300aa] 0x1200d864: "mov x23, x0" x0=0x5c20796 => x23=0x5c20796
+[11:07:03 981][libmx.so 0x0d868] [e00313aa] 0x1200d868: "mov x0, x19" x19=0xfffe1640 => x0=0xfffe1640
+[11:07:03 983][libmx.so 0x0d86c] [e10315aa] 0x1200d86c: "mov x1, x21" x21=0x12026894 => x1=0x12026894
+[11:07:03 984][libmx.so 0x0d870] [089d42f9] 0x1200d870: "ldr x8, [x8, #0x538]" x8=0xfffe0ef0 => x8=0xfffe0c00
+[11:07:03 985][libmx.so 0x0d874] [00013fd6] 0x1200d874: "blr x8" x8=0xfffe0c00 => x30=0x1200d878
+[11:07:03 987][libmx.so 0x0d878] [e30300aa] 0x1200d878: "mov x3, x0" x0=0x6ff29830 => x3=0x6ff29830
+[11:07:03 988][libmx.so 0x0d87c] [e00313aa] 0x1200d87c: "mov x0, x19" x19=0xfffe1640 => x0=0xfffe1640
+[11:07:03 989][libmx.so 0x0d880] [e10316aa] 0x1200d880: "mov x1, x22" x22=0xef7f56a8 => x1=0xef7f56a8
+[11:07:03 990][libmx.so 0x0d884] [e20317aa] 0x1200d884: "mov x2, x23" x23=0x5c20796 => x2=0x5c20796
+[11:07:03 991][libmx.so 0x0d888] [dafeff97] 0x1200d888: "bl #0x1200d3f0"
+[11:07:03 992][libmx.so 0x0d3f0] [30010090] 0x1200d3f0: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:03 993][libmx.so 0x0d3f4] [11c646f9] 0x1200d3f4: "ldr x17, [x16, #0xd88]" x16=0x12031000 => x17=0x1200d97c
+[11:07:03 998][libmx.so 0x0d3f8] [10223691] 0x1200d3f8: "add x16, x16, #0xd88" x16=0x12031000 => x16=0x12031d88
+[11:07:04 000][libmx.so 0x0d3fc] [20021fd6] 0x1200d3fc: "br x17" x17=0x1200d97c
+[11:07:04 002][libmx.so 0x0d97c] [ff8304d1] 0x1200d97c: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 003][libmx.so 0x0d980] [fc4f10a9] 0x1200d980: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0xfffe1640 sp=0xe4fff530 => x28=0x8 x19=0xfffe1640
+[11:07:04 004][libmx.so 0x0d984] [fd7b11a9] 0x1200d984: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d88c sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d88c
+[11:07:04 005][libmx.so 0x0d988] [fd430491] 0x1200d988: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 006][libmx.so 0x0d98c] [e39308a9] 0x1200d98c: "stp x3, x4, [sp, #0x88]" x3=0x6ff29830 x4=0x12360000 sp=0xe4fff530 => x3=0x6ff29830 x4=0x12360000
+[11:07:04 007][libmx.so 0x0d990] [e59b09a9] 0x1200d990: "stp x5, x6, [sp, #0x98]" x5=0x8080000000000000 x6=0x8080 sp=0xe4fff530 => x5=0x8080000000000000 x6=0x8080
+[11:07:04 008][libmx.so 0x0d994] [e75700f9] 0x1200d994: "str x7, [sp, #0xa8]" x7=0xfeff303c6b747479 sp=0xe4fff530 => x7=0xfeff303c6b747479
+[11:07:04 010][libmx.so 0x0d998] [e00700ad] 0x1200d998: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 011][libmx.so 0x0d99c] [e20f01ad] 0x1200d99c: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 013][libmx.so 0x0d9a0] [e41702ad] 0x1200d9a0: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 014][libmx.so 0x0d9a4] [e61f03ad] 0x1200d9a4: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 015][libmx.so 0x0d9a8] [53d03bd5] 0x1200d9a8: "mrs x19, tpidr_el0" x19=0xfffe1640 => x19=0xe4fff708
+[11:07:04 016][libmx.so 0x0d9ac] [6b1640f9] 0x1200d9ac: "ldr x11, [x19, #0x28]" x19=0xe4fff708 => x11=0x0
+[11:07:04 017][libmx.so 0x0d9b0] [e8048092] 0x1200d9b0: "movn x8, #0x27" x8=0xfffe0c00 => x8=0xffffffffffffffd8
+[11:07:04 020][libmx.so 0x0d9b4] [e9030091] 0x1200d9b4: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 021][libmx.so 0x0d9b8] [ea230291] 0x1200d9b8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 022][libmx.so 0x0d9bc] [08f0dff2] 0x1200d9bc: "movk x8, #0xff80, lsl #32" x8=0xffffffffffffffd8 => x8=0xffffff80ffffffd8
+[11:07:04 023][libmx.so 0x0d9c0] [ac430091] 0x1200d9c0: "add x12, x29, #0x10" x29=0xe4fff640 => x12=0xe4fff650
+[11:07:04 026][libmx.so 0x0d9c4] [29010291] 0x1200d9c4: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 029][libmx.so 0x0d9c8] [4aa10091] 0x1200d9c8: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 031][libmx.so 0x0d9cc] [ab831ef8] 0x1200d9cc: "stur x11, [x29, #-0x18]" x11=0x0 x29=0xe4fff640 => x11=0x0
+[11:07:04 032][libmx.so 0x0d9d0] [a9a33da9] 0x1200d9d0: "stp x9, x8, [x29, #-0x28]" x9=0xe4fff5b0 x8=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x8=0xffffff80ffffffd8
+[11:07:04 034][libmx.so 0x0d9d4] [acab3ca9] 0x1200d9d4: "stp x12, x10, [x29, #-0x38]" x12=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x12=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 034][libmx.so 0x0d9d8] [080040f9] 0x1200d9d8: "ldr x8, [x0]" x0=0xfffe1640 => x8=0xfffe0ef0
+[11:07:04 035][libmx.so 0x0d9dc] [a9e300d1] 0x1200d9dc: "sub x9, x29, #0x38" x29=0xe4fff640 => x9=0xe4fff608
+[11:07:04 036][libmx.so 0x0d9e0] [210140ad] 0x1200d9e0: "ldp q1, q0, [x9]" x9=0xe4fff608
+[11:07:04 037][libmx.so 0x0d9e4] [a38301d1] 0x1200d9e4: "sub x3, x29, #0x60" x29=0xe4fff640 => x3=0xe4fff5e0
+[11:07:04 038][libmx.so 0x0d9e8] [08cd41f9] 0x1200d9e8: "ldr x8, [x8, #0x398]" x8=0xfffe0ef0 => x8=0xfffe0780
+[11:07:04 039][libmx.so 0x0d9ec] [a1033dad] 0x1200d9ec: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 040][libmx.so 0x0d9f0] [00013fd6] 0x1200d9f0: "blr x8" x8=0xfffe0780 => x30=0x1200d9f4
+[11:07:04 041][libmx.so 0x0d9f4] [681640f9] 0x1200d9f4: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 043][libmx.so 0x0d9f8] [a9835ef8] 0x1200d9f8: "ldur x9, [x29, #-0x18]" x9=0xe4fff608 x29=0xe4fff640 => x9=0x0
+[11:07:04 045][libmx.so 0x0d9fc] [1f0109eb] 0x1200d9fc: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 048][libmx.so 0x0da00] [a1000054] 0x1200da00: "b.ne #0x1200da14" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 050][libmx.so 0x0da04] [fd7b51a9] 0x1200da04: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200d9f4 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d88c
+[11:07:04 051][libmx.so 0x0da08] [fc4f50a9] 0x1200da08: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0xfffe1640
+[11:07:04 052][libmx.so 0x0da0c] [ff830491] 0x1200da0c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 053][libmx.so 0x0da10] [c0035fd6] 0x1200da10: "ret"
+[11:07:04 054][libmx.so 0x0d88c] [680240f9] 0x1200d88c: "ldr x8, [x19]" x19=0xfffe1640 => x8=0xfffe0ef0
+[11:07:04 055][libmx.so 0x0d890] [c20000b0] 0x1200d890: "adrp x2, #0x12026000" => x2=0x12026000
+[11:07:04 056][libmx.so 0x0d894] [c30000b0] 0x1200d894: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 057][libmx.so 0x0d898] [f50300aa] 0x1200d898: "mov x21, x0" x0=0x36d585c => x21=0x36d585c
+[11:07:04 058][libmx.so 0x0d89c] [088540f9] 0x1200d89c: "ldr x8, [x8, #0x108]" x8=0xfffe0ef0 => x8=0xfffe0260
+[11:07:04 058][libmx.so 0x0d8a0] [42902891] 0x1200d8a0: "add x2, x2, #0xa24" x2=0x12026000 => x2=0x12026a24
+[11:07:04 059][libmx.so 0x0d8a4] [63ac2891] 0x1200d8a4: "add x3, x3, #0xa2b" x3=0x12026000 => x3=0x12026a2b
+[11:07:04 060][libmx.so 0x0d8a8] [e00313aa] 0x1200d8a8: "mov x0, x19" x19=0xfffe1640 => x0=0xfffe1640
+[11:07:04 061][libmx.so 0x0d8ac] [e10316aa] 0x1200d8ac: "mov x1, x22" x22=0xef7f56a8 => x1=0xef7f56a8
+[11:07:04 062][libmx.so 0x0d8b0] [00013fd6] 0x1200d8b0: "blr x8" x8=0xfffe0260 => x30=0x1200d8b4
+[11:07:04 063][libmx.so 0x0d8b4] [e20300aa] 0x1200d8b4: "mov x2, x0" x0=0x70afcb1f => x2=0x70afcb1f
+[11:07:04 064][libmx.so 0x0d8b8] [e00313aa] 0x1200d8b8: "mov x0, x19" x19=0xfffe1640 => x0=0xfffe1640
+[11:07:04 065][libmx.so 0x0d8bc] [e10315aa] 0x1200d8bc: "mov x1, x21" x21=0x36d585c => x1=0x36d585c
+[11:07:04 066][libmx.so 0x0d8c0] [e30314aa] 0x1200d8c0: "mov x3, x20" x20=0x564fabc8 => x3=0x564fabc8
+[11:07:04 067][libmx.so 0x0d8c4] [8bfeff97] 0x1200d8c4: "bl #0x1200d2f0"
+[11:07:04 068][libmx.so 0x0d2f0] [30010090] 0x1200d2f0: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 069][libmx.so 0x0d2f4] [118646f9] 0x1200d2f4: "ldr x17, [x16, #0xd08]" x16=0x12031000 => x17=0x1200da18
+[11:07:04 070][libmx.so 0x0d2f8] [10223491] 0x1200d2f8: "add x16, x16, #0xd08" x16=0x12031000 => x16=0x12031d08
+[11:07:04 071][libmx.so 0x0d2fc] [20021fd6] 0x1200d2fc: "br x17" x17=0x1200da18
+[11:07:04 073][libmx.so 0x0da18] [ff8304d1] 0x1200da18: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 074][libmx.so 0x0da1c] [fc4f10a9] 0x1200da1c: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0xfffe1640 sp=0xe4fff530 => x28=0x8 x19=0xfffe1640
+[11:07:04 075][libmx.so 0x0da20] [fd7b11a9] 0x1200da20: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d8c8 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d8c8
+[11:07:04 076][libmx.so 0x0da24] [fd430491] 0x1200da24: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 077][libmx.so 0x0da28] [e39308a9] 0x1200da28: "stp x3, x4, [sp, #0x88]" x3=0x564fabc8 x4=0x12360000 sp=0xe4fff530 => x3=0x564fabc8 x4=0x12360000
+[11:07:04 078][libmx.so 0x0da2c] [e59b09a9] 0x1200da2c: "stp x5, x6, [sp, #0x98]" x5=0x8080000000000000 x6=0x8080 sp=0xe4fff530 => x5=0x8080000000000000 x6=0x8080
+[11:07:04 079][libmx.so 0x0da30] [e75700f9] 0x1200da30: "str x7, [sp, #0xa8]" x7=0xfeff303c6b747479 sp=0xe4fff530 => x7=0xfeff303c6b747479
+[11:07:04 079][libmx.so 0x0da34] [e00700ad] 0x1200da34: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 080][libmx.so 0x0da38] [e20f01ad] 0x1200da38: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 081][libmx.so 0x0da3c] [e41702ad] 0x1200da3c: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 082][libmx.so 0x0da40] [e61f03ad] 0x1200da40: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 083][libmx.so 0x0da44] [53d03bd5] 0x1200da44: "mrs x19, tpidr_el0" x19=0xfffe1640 => x19=0xe4fff708
+[11:07:04 084][libmx.so 0x0da48] [6b1640f9] 0x1200da48: "ldr x11, [x19, #0x28]" x19=0xe4fff708 => x11=0x0
+[11:07:04 086][libmx.so 0x0da4c] [e8048092] 0x1200da4c: "movn x8, #0x27" x8=0xfffe0260 => x8=0xffffffffffffffd8
+[11:07:04 087][libmx.so 0x0da50] [e9030091] 0x1200da50: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 087][libmx.so 0x0da54] [ea230291] 0x1200da54: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 088][libmx.so 0x0da58] [08f0dff2] 0x1200da58: "movk x8, #0xff80, lsl #32" x8=0xffffffffffffffd8 => x8=0xffffff80ffffffd8
+[11:07:04 089][libmx.so 0x0da5c] [ac430091] 0x1200da5c: "add x12, x29, #0x10" x29=0xe4fff640 => x12=0xe4fff650
+[11:07:04 090][libmx.so 0x0da60] [29010291] 0x1200da60: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 091][libmx.so 0x0da64] [4aa10091] 0x1200da64: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 092][libmx.so 0x0da68] [ab831ef8] 0x1200da68: "stur x11, [x29, #-0x18]" x11=0x0 x29=0xe4fff640 => x11=0x0
+[11:07:04 099][libmx.so 0x0da6c] [a9a33da9] 0x1200da6c: "stp x9, x8, [x29, #-0x28]" x9=0xe4fff5b0 x8=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x8=0xffffff80ffffffd8
+[11:07:04 110][libmx.so 0x0da70] [acab3ca9] 0x1200da70: "stp x12, x10, [x29, #-0x38]" x12=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x12=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 119][libmx.so 0x0da74] [080040f9] 0x1200da74: "ldr x8, [x0]" x0=0xfffe1640 => x8=0xfffe0ef0
+[11:07:04 121][libmx.so 0x0da78] [a9e300d1] 0x1200da78: "sub x9, x29, #0x38" x29=0xe4fff640 => x9=0xe4fff608
+[11:07:04 123][libmx.so 0x0da7c] [210140ad] 0x1200da7c: "ldp q1, q0, [x9]" x9=0xe4fff608
+[11:07:04 126][libmx.so 0x0da80] [a38301d1] 0x1200da80: "sub x3, x29, #0x60" x29=0xe4fff640 => x3=0xe4fff5e0
+[11:07:04 131][libmx.so 0x0da84] [088d40f9] 0x1200da84: "ldr x8, [x8, #0x118]" x8=0xfffe0ef0 => x8=0xfffe0280
+[11:07:04 132][libmx.so 0x0da88] [a1033dad] 0x1200da88: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 133][libmx.so 0x0da8c] [00013fd6] 0x1200da8c: "blr x8" x8=0xfffe0280 => x30=0x1200da90
+[11:07:04 134][libmx.so 0x0da90] [681640f9] 0x1200da90: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 135][libmx.so 0x0da94] [a9835ef8] 0x1200da94: "ldur x9, [x29, #-0x18]" x9=0xe4fff608 x29=0xe4fff640 => x9=0x0
+[11:07:04 136][libmx.so 0x0da98] [1f0109eb] 0x1200da98: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 137][libmx.so 0x0da9c] [a1000054] 0x1200da9c: "b.ne #0x1200dab0" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 138][libmx.so 0x0daa0] [fd7b51a9] 0x1200daa0: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200da90 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d8c8
+[11:07:04 139][libmx.so 0x0daa4] [fc4f50a9] 0x1200daa4: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0xfffe1640
+[11:07:04 139][libmx.so 0x0daa8] [ff830491] 0x1200daa8: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 140][libmx.so 0x0daac] [c0035fd6] 0x1200daac: "ret"
+[11:07:04 141][libmx.so 0x0d8c8] [680240f9] 0x1200d8c8: "ldr x8, [x19]" x19=0xfffe1640 => x8=0xfffe0ef0
+[11:07:04 141][libmx.so 0x0d8cc] [f40300aa] 0x1200d8cc: "mov x20, x0" x0=0xea6147e => x20=0xea6147e
+[11:07:04 142][libmx.so 0x0d8d0] [e00313aa] 0x1200d8d0: "mov x0, x19" x19=0xfffe1640 => x0=0xfffe1640
+[11:07:04 143][libmx.so 0x0d8d4] [e10316aa] 0x1200d8d4: "mov x1, x22" x22=0xef7f56a8 => x1=0xef7f56a8
+[11:07:04 143][libmx.so 0x0d8d8] [085d40f9] 0x1200d8d8: "ldr x8, [x8, #0xb8]" x8=0xfffe0ef0 => x8=0xfffe01c0
+[11:07:04 144][libmx.so 0x0d8dc] [00013fd6] 0x1200d8dc: "blr x8" x8=0xfffe01c0 => x30=0x1200d8e0
+[11:07:04 145][libmx.so 0x0d8e0] [680240f9] 0x1200d8e0: "ldr x8, [x19]" x19=0xfffe1640 => x8=0xfffe0ef0
+[11:07:04 145][libmx.so 0x0d8e4] [e00313aa] 0x1200d8e4: "mov x0, x19" x19=0xfffe1640 => x0=0xfffe1640
+[11:07:04 146][libmx.so 0x0d8e8] [e10314aa] 0x1200d8e8: "mov x1, x20" x20=0xea6147e => x1=0xea6147e
+[11:07:04 147][libmx.so 0x0d8ec] [08ad42f9] 0x1200d8ec: "ldr x8, [x8, #0x558]" x8=0xfffe0ef0 => x8=0xfffe0a90
+[11:07:04 147][libmx.so 0x0d8f0] [00013fd6] 0x1200d8f0: "blr x8" x8=0xfffe0a90 => x30=0x1200d8f4
+[11:07:04 148][libmx.so 0x0d8f4] [680240f9] 0x1200d8f4: "ldr x8, [x19]" x19=0xfffe1640 => x8=0xfffe0ef0
+[11:07:04 149][libmx.so 0x0d8f8] [f503002a] 0x1200d8f8: "mov w21, w0" w0=0x14 => w21=0x14
+[11:07:04 150][libmx.so 0x0d8fc] [e00313aa] 0x1200d8fc: "mov x0, x19" x19=0xfffe1640 => x0=0xfffe1640
+[11:07:04 151][libmx.so 0x0d900] [e10314aa] 0x1200d900: "mov x1, x20" x20=0xea6147e => x1=0xea6147e
+[11:07:04 152][libmx.so 0x0d904] [08e142f9] 0x1200d904: "ldr x8, [x8, #0x5c0]" x8=0xfffe0ef0 => x8=0xfffe0b60
+[11:07:04 152][libmx.so 0x0d908] [e2031faa] 0x1200d908: "mov x2, xzr" => x2=0x0
+[11:07:04 153][libmx.so 0x0d90c] [00013fd6] 0x1200d90c: "blr x8" x8=0xfffe0b60 => x30=0x1200d910
+[11:07:04 154][libmx.so 0x0d910] [28008052] 0x1200d910: "movz w8, #0x1" w8=0xfffe0b60 => w8=0x1
+[11:07:04 155][libmx.so 0x0d914] [a87a1f33] 0x1200d914: "bfi w8, w21, #1, #0x1f" w8=0x1 w21=0x14 => w8=0x29
+[11:07:04 156][libmx.so 0x0d918] [167d4093] 0x1200d918: "sxtw x22, w8" x22=0xef7f56a8 w8=0x29 => x22=0x29
+[11:07:04 157][libmx.so 0x0d91c] [f30300aa] 0x1200d91c: "mov x19, x0" x0=0x12037000 => x19=0x12037000
+[11:07:04 157][libmx.so 0x0d920] [e00316aa] 0x1200d920: "mov x0, x22" x22=0x29 => x0=0x29
+[11:07:04 158][libmx.so 0x0d924] [2fffff97] 0x1200d924: "bl #0x1200d5e0"
+[11:07:04 159][libmx.so 0x0d5e0] [30010090] 0x1200d5e0: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 160][libmx.so 0x0d5e4] [114247f9] 0x1200d5e4: "ldr x17, [x16, #0xe80]" x16=0x12031000 => x17=0x1200eaa4
+[11:07:04 160][libmx.so 0x0d5e8] [10023a91] 0x1200d5e8: "add x16, x16, #0xe80" x16=0x12031000 => x16=0x12031e80
+[11:07:04 161][libmx.so 0x0d5ec] [20021fd6] 0x1200d5ec: "br x17" x17=0x1200eaa4
+[11:07:04 161][libmx.so 0x0eaa4] [43faff17] 0x1200eaa4: "b #0x1200d3b0"
+[11:07:04 162][libmx.so 0x0d3b0] [30010090] 0x1200d3b0: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 163][libmx.so 0x0d3b4] [11b646f9] 0x1200d3b4: "ldr x17, [x16, #0xd68]" x16=0x12031000 => x17=0x1200ea08
+[11:07:04 163][libmx.so 0x0d3b8] [10a23591] 0x1200d3b8: "add x16, x16, #0xd68" x16=0x12031000 => x16=0x12031d68
+[11:07:04 164][libmx.so 0x0d3bc] [20021fd6] 0x1200d3bc: "br x17" x17=0x1200ea08
+[11:07:04 165][libmx.so 0x0ea08] [f30f1ef8] 0x1200ea08: "str x19, [sp, #-0x20]!" x19=0x12037000 sp=0xe4fff650 => x19=0x12037000 sp=0xe4fff630
+[11:07:04 165][libmx.so 0x0ea0c] [fd7b01a9] 0x1200ea0c: "stp x29, x30, [sp, #0x10]" x29=0xe4fff680 x30=0x1200d928 sp=0xe4fff630 => x29=0xe4fff680 x30=0x1200d928
+[11:07:04 166][libmx.so 0x0ea10] [fd430091] 0x1200ea10: "add x29, sp, #0x10" sp=0xe4fff630 => x29=0xe4fff640
+[11:07:04 167][libmx.so 0x0ea14] [1f0000f1] 0x1200ea14: "cmp x0, #0" => nzcv: N=0, Z=0, C=1, V=0 x0=0x29
+[11:07:04 168][libmx.so 0x0ea18] [13149f9a] 0x1200ea18: "csinc x19, x0, xzr, ne" nzcv: N=0, Z=0, C=1, V=0 x0=0x29 => x19=0x29
+[11:07:04 168][libmx.so 0x0ea1c] [e00313aa] 0x1200ea1c: "mov x0, x19" x19=0x29 => x0=0x29
+[11:07:04 169][libmx.so 0x0ea20] [18fbff97] 0x1200ea20: "bl #0x1200d680"
+[11:07:04 169][libmx.so 0x0d680] [30010090] 0x1200d680: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 170][libmx.so 0x0d684] [116a47f9] 0x1200d684: "ldr x17, [x16, #0xed0]" x16=0x12031000 => x17=0x1219bb08
+[11:07:04 170][libmx.so 0x0d688] [10423b91] 0x1200d688: "add x16, x16, #0xed0" x16=0x12031000 => x16=0x12031ed0
+[11:07:04 171][libmx.so 0x0d68c] [20021fd6] 0x1200d68c: "br x17" x17=0x1219bb08
+[11:07:04 172][libmx.so 0x0ea24] [a00000b5] 0x1200ea24: "cbnz x0, #0x1200ea38" x0=0x12353030
+[11:07:04 173][libmx.so 0x0ea38] [fd7b41a9] 0x1200ea38: "ldp x29, x30, [sp, #0x10]" x29=0xe4fff640 x30=0x1200ea24 sp=0xe4fff630 => x29=0xe4fff680 x30=0x1200d928
+[11:07:04 173][libmx.so 0x0ea3c] [f30742f8] 0x1200ea3c: "ldr x19, [sp], #0x20" sp=0xe4fff630 => x19=0x12037000 sp=0xe4fff650
+[11:07:04 174][libmx.so 0x0ea40] [c0035fd6] 0x1200ea40: "ret"
+[11:07:04 175][libmx.so 0x0d928] [e1031f2a] 0x1200d928: "mov w1, wzr" => w1=0x0
+[11:07:04 175][libmx.so 0x0d92c] [e20316aa] 0x1200d92c: "mov x2, x22" x22=0x29 => x2=0x29
+[11:07:04 176][libmx.so 0x0d930] [f40300aa] 0x1200d930: "mov x20, x0" x0=0x12353030 => x20=0x12353030
+[11:07:04 176][libmx.so 0x0d934] [5bffff97] 0x1200d934: "bl #0x1200d6a0"
+[11:07:04 178][libmx.so 0x0d6a0] [30010090] 0x1200d6a0: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 179][libmx.so 0x0d6a4] [117247f9] 0x1200d6a4: "ldr x17, [x16, #0xee0]" x16=0x12031000 => x17=0x1219c640
+[11:07:04 179][libmx.so 0x0d6a8] [10823b91] 0x1200d6a8: "add x16, x16, #0xee0" x16=0x12031000 => x16=0x12031ee0
+[11:07:04 180][libmx.so 0x0d6ac] [20021fd6] 0x1200d6ac: "br x17" x17=0x1219c640
+[11:07:04 181][libmx.so 0x0d938] [bf060071] 0x1200d938: "cmp w21, #1" => nzcv: N=0, Z=0, C=1, V=0 w21=0x14
+[11:07:04 181][libmx.so 0x0d93c] [4b010054] 0x1200d93c: "b.lt #0x1200d964" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 182][libmx.so 0x0d940] [f603152a] 0x1200d940: "mov w22, w21" w21=0x14 => w22=0x14
+[11:07:04 183][libmx.so 0x0d944] [f50314aa] 0x1200d944: "mov x21, x20" x20=0x12353030 => x21=0x12353030
+[11:07:04 183][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037000 => w3=0x96 x19=0x12037001
+[11:07:04 184][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 184][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353030 => x0=0x12353030
+[11:07:04 185][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 186][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 187][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037001 sp=0xe4fff530 => x28=0x8 x19=0x12037001
+[11:07:04 187][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 187][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 188][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x96 x4=0x12266000 sp=0xe4fff530 => x3=0x96 x4=0x12266000
+[11:07:04 188][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0xffffffff x6=0x1 sp=0xe4fff530 => x5=0xffffffff x6=0x1
+[11:07:04 190][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0x0 sp=0xe4fff530 => x7=0x0
+[11:07:04 190][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 191][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 191][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 192][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 193][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037001 => x19=0xe4fff708
+[11:07:04 193][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 194][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 194][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x12226a80 => x12=0xffffffffffffffd8
+[11:07:04 195][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 196][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 196][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 197][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 197][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 198][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 198][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 199][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 199][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 200][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 201][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 201][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 202][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 202][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 203][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 204][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 204][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 205][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 206][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 207][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 207][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 211][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 212][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353032 x29=0xe4fff640 => x9=0x0
+[11:07:04 212][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 213][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 214][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 215][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037001
+[11:07:04 215][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 216][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 216][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x14 => nzcv: N=0, Z=0, C=1, V=0 x22=0x13
+[11:07:04 218][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353030 => x21=0x12353032
+[11:07:04 219][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 219][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037001 => w3=0x58 x19=0x12037002
+[11:07:04 219][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 219][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353032 => x0=0x12353032
+[11:07:04 219][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 219][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 219][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037002 sp=0xe4fff530 => x28=0x8 x19=0x12037002
+[11:07:04 220][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 220][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 220][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x58 x4=0x12260200 sp=0xe4fff530 => x3=0x58 x4=0x12260200
+[11:07:04 221][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 221][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 221][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 221][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 221][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 221][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 221][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037002 => x19=0xe4fff708
+[11:07:04 221][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 221][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 221][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 221][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 221][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 221][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 221][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 221][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 222][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 222][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 222][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 222][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 222][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 222][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 222][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 222][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 222][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 222][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 222][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 222][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 222][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 222][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 222][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 222][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 222][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 222][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353034 x29=0xe4fff640 => x9=0x0
+[11:07:04 223][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 223][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 223][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 223][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037002
+[11:07:04 223][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 223][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 223][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x13 => nzcv: N=0, Z=0, C=1, V=0 x22=0x12
+[11:07:04 223][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353032 => x21=0x12353034
+[11:07:04 223][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 223][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037002 => w3=0x48 x19=0x12037003
+[11:07:04 223][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 223][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353034 => x0=0x12353034
+[11:07:04 223][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 223][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 223][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037003 sp=0xe4fff530 => x28=0x8 x19=0x12037003
+[11:07:04 223][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 223][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 223][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x48 x4=0x12260200 sp=0xe4fff530 => x3=0x48 x4=0x12260200
+[11:07:04 223][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 224][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 224][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 224][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 224][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 224][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 224][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037003 => x19=0xe4fff708
+[11:07:04 224][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 224][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 224][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 224][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 224][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 224][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 224][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 224][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 224][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 224][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 224][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 224][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 224][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 224][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 224][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 224][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 224][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 225][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 225][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 225][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 225][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 225][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 225][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 225][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 225][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 225][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353036 x29=0xe4fff640 => x9=0x0
+[11:07:04 225][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 225][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 225][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 225][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037003
+[11:07:04 225][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 225][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 225][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x12 => nzcv: N=0, Z=0, C=1, V=0 x22=0x11
+[11:07:04 225][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353034 => x21=0x12353036
+[11:07:04 225][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 225][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037003 => w3=0x66 x19=0x12037004
+[11:07:04 226][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 226][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353036 => x0=0x12353036
+[11:07:04 226][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 226][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 226][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037004 sp=0xe4fff530 => x28=0x8 x19=0x12037004
+[11:07:04 226][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 226][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 226][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x66 x4=0x12260200 sp=0xe4fff530 => x3=0x66 x4=0x12260200
+[11:07:04 226][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 226][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 226][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 226][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 226][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 226][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 226][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037004 => x19=0xe4fff708
+[11:07:04 226][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 226][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 226][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 226][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 226][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 226][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 226][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 226][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 226][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 227][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 227][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 227][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 227][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 227][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 227][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 227][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 227][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 227][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 227][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 227][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 227][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 227][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 227][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 227][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 227][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 227][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353038 x29=0xe4fff640 => x9=0x0
+[11:07:04 227][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 228][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 228][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 228][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037004
+[11:07:04 228][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 228][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 228][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x11 => nzcv: N=0, Z=0, C=1, V=0 x22=0x10
+[11:07:04 228][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353036 => x21=0x12353038
+[11:07:04 228][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 228][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037004 => w3=0xce x19=0x12037005
+[11:07:04 228][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 228][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353038 => x0=0x12353038
+[11:07:04 228][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 228][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 228][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037005 sp=0xe4fff530 => x28=0x8 x19=0x12037005
+[11:07:04 228][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 228][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 228][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0xce x4=0x12260200 sp=0xe4fff530 => x3=0xce x4=0x12260200
+[11:07:04 228][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 228][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 228][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 228][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 228][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 229][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 229][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037005 => x19=0xe4fff708
+[11:07:04 229][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 229][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 229][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 229][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 229][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 229][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 229][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 229][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 229][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 229][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 229][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 229][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 229][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 229][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 229][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 229][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 229][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 229][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 229][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 229][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 229][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 229][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 229][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 229][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 230][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 230][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x1235303a x29=0xe4fff640 => x9=0x0
+[11:07:04 230][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 230][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 230][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 230][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037005
+[11:07:04 230][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 230][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 230][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x10 => nzcv: N=0, Z=0, C=1, V=0 x22=0xf
+[11:07:04 230][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353038 => x21=0x1235303a
+[11:07:04 230][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 230][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037005 => w3=0xe6 x19=0x12037006
+[11:07:04 230][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 230][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x1235303a => x0=0x1235303a
+[11:07:04 230][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 230][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 230][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037006 sp=0xe4fff530 => x28=0x8 x19=0x12037006
+[11:07:04 230][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 230][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 230][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0xe6 x4=0x12260200 sp=0xe4fff530 => x3=0xe6 x4=0x12260200
+[11:07:04 230][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 230][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 230][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 230][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 230][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 230][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 230][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037006 => x19=0xe4fff708
+[11:07:04 231][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 231][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 231][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 231][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 231][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 231][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 231][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 231][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 231][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 231][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 231][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 231][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 231][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 231][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 231][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 231][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 231][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 231][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 231][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 231][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 231][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 231][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 231][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 231][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 232][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 232][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x1235303c x29=0xe4fff640 => x9=0x0
+[11:07:04 232][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 232][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 232][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 232][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037006
+[11:07:04 232][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 232][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 232][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0xf => nzcv: N=0, Z=0, C=1, V=0 x22=0xe
+[11:07:04 232][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x1235303a => x21=0x1235303c
+[11:07:04 232][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 232][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037006 => w3=0x99 x19=0x12037007
+[11:07:04 232][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 232][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x1235303c => x0=0x1235303c
+[11:07:04 232][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 233][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 233][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037007 sp=0xe4fff530 => x28=0x8 x19=0x12037007
+[11:07:04 233][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 233][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 233][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x99 x4=0x12260200 sp=0xe4fff530 => x3=0x99 x4=0x12260200
+[11:07:04 233][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 233][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 233][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 233][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 233][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 233][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 233][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037007 => x19=0xe4fff708
+[11:07:04 233][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 233][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 233][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 233][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 233][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 233][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 233][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 233][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 233][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 233][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 233][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 233][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 233][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 233][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 233][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 234][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 234][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 234][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 234][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 234][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 234][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 234][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 234][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 234][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 238][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 238][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x1235303e x29=0xe4fff640 => x9=0x0
+[11:07:04 238][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 238][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 238][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 238][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037007
+[11:07:04 238][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 238][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 238][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0xe => nzcv: N=0, Z=0, C=1, V=0 x22=0xd
+[11:07:04 238][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x1235303c => x21=0x1235303e
+[11:07:04 238][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 238][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037007 => w3=0x9 x19=0x12037008
+[11:07:04 238][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 238][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x1235303e => x0=0x1235303e
+[11:07:04 238][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 238][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 238][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037008 sp=0xe4fff530 => x28=0x8 x19=0x12037008
+[11:07:04 238][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 238][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 239][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x9 x4=0x12260200 sp=0xe4fff530 => x3=0x9 x4=0x12260200
+[11:07:04 239][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 239][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 239][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 239][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 239][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 239][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 239][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037008 => x19=0xe4fff708
+[11:07:04 239][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 239][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 239][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 239][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 239][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 239][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 239][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 239][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 239][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 239][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 239][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 239][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 239][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 239][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 239][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 239][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 239][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 239][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 239][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 239][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 239][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 239][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 239][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 239][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 240][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 240][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353040 x29=0xe4fff640 => x9=0x0
+[11:07:04 240][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 240][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 240][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 240][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037008
+[11:07:04 240][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 240][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 240][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0xd => nzcv: N=0, Z=0, C=1, V=0 x22=0xc
+[11:07:04 240][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x1235303e => x21=0x12353040
+[11:07:04 240][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 240][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037008 => w3=0xc6 x19=0x12037009
+[11:07:04 240][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 240][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353040 => x0=0x12353040
+[11:07:04 240][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 240][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 240][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037009 sp=0xe4fff530 => x28=0x8 x19=0x12037009
+[11:07:04 240][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 240][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 240][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0xc6 x4=0x12260200 sp=0xe4fff530 => x3=0xc6 x4=0x12260200
+[11:07:04 240][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 240][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 240][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 240][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 240][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 240][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 240][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037009 => x19=0xe4fff708
+[11:07:04 241][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 241][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 241][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x1 => x12=0xffffffffffffffd8
+[11:07:04 241][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 241][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 241][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 241][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 241][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 241][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 241][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 241][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 241][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 241][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 241][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 241][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 241][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 241][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 241][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 241][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 241][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 241][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 241][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 241][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 241][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 241][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 241][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353042 x29=0xe4fff640 => x9=0x0
+[11:07:04 241][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 241][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 241][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 241][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037009
+[11:07:04 241][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 241][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 241][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0xc => nzcv: N=0, Z=0, C=1, V=0 x22=0xb
+[11:07:04 242][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353040 => x21=0x12353042
+[11:07:04 242][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 242][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037009 => w3=0xe7 x19=0x1203700a
+[11:07:04 242][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 242][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353042 => x0=0x12353042
+[11:07:04 242][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 242][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 242][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x1203700a sp=0xe4fff530 => x28=0x8 x19=0x1203700a
+[11:07:04 242][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 242][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 242][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0xe7 x4=0x12260200 sp=0xe4fff530 => x3=0xe7 x4=0x12260200
+[11:07:04 242][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 242][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 242][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 242][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 242][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 242][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 242][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x1203700a => x19=0xe4fff708
+[11:07:04 242][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 242][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 242][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 242][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 242][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 242][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 242][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 242][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 242][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 242][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 242][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 243][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 243][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 243][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 243][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 243][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 243][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 243][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 243][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 243][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 243][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 243][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 243][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 243][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 243][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 243][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353044 x29=0xe4fff640 => x9=0x0
+[11:07:04 243][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 243][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 243][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 243][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x1203700a
+[11:07:04 243][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 243][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 243][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0xb => nzcv: N=0, Z=0, C=1, V=0 x22=0xa
+[11:07:04 243][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353042 => x21=0x12353044
+[11:07:04 243][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 243][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x1203700a => w3=0x78 x19=0x1203700b
+[11:07:04 244][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 244][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353044 => x0=0x12353044
+[11:07:04 244][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 244][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 244][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x1203700b sp=0xe4fff530 => x28=0x8 x19=0x1203700b
+[11:07:04 244][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 244][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 244][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x78 x4=0x12260200 sp=0xe4fff530 => x3=0x78 x4=0x12260200
+[11:07:04 244][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 244][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 244][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 244][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 244][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 244][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 244][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x1203700b => x19=0xe4fff708
+[11:07:04 244][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 244][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 244][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 244][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 244][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 244][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 244][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 244][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 244][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 244][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 244][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 244][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 244][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 244][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 244][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 244][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 244][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 244][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 245][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 245][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 245][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 245][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 245][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 245][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 245][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 245][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353046 x29=0xe4fff640 => x9=0x0
+[11:07:04 245][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 245][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 245][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 245][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x1203700b
+[11:07:04 245][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 245][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 245][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0xa => nzcv: N=0, Z=0, C=1, V=0 x22=0x9
+[11:07:04 245][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353044 => x21=0x12353046
+[11:07:04 245][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 245][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x1203700b => w3=0x5f x19=0x1203700c
+[11:07:04 245][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 245][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353046 => x0=0x12353046
+[11:07:04 245][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 245][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 245][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x1203700c sp=0xe4fff530 => x28=0x8 x19=0x1203700c
+[11:07:04 245][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 245][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 245][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x5f x4=0x12260200 sp=0xe4fff530 => x3=0x5f x4=0x12260200
+[11:07:04 245][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 245][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 245][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 245][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 245][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 246][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 246][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x1203700c => x19=0xe4fff708
+[11:07:04 246][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 246][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 246][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 246][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 246][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 246][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 246][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 246][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 246][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 246][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 246][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 246][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 246][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 246][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 246][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 246][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 246][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 246][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 246][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 246][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 246][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 246][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 246][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 246][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 246][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 246][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353048 x29=0xe4fff640 => x9=0x0
+[11:07:04 246][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 246][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 246][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 246][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x1203700c
+[11:07:04 246][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 246][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 246][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x9 => nzcv: N=0, Z=0, C=1, V=0 x22=0x8
+[11:07:04 246][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353046 => x21=0x12353048
+[11:07:04 247][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 247][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x1203700c => w3=0x34 x19=0x1203700d
+[11:07:04 247][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 247][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353048 => x0=0x12353048
+[11:07:04 247][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 247][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 247][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x1203700d sp=0xe4fff530 => x28=0x8 x19=0x1203700d
+[11:07:04 247][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 247][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 247][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x34 x4=0x12260200 sp=0xe4fff530 => x3=0x34 x4=0x12260200
+[11:07:04 247][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 247][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 247][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 247][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 247][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 247][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 247][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x1203700d => x19=0xe4fff708
+[11:07:04 247][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 247][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 247][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 247][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 247][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 247][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 247][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 247][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 247][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 247][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 247][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 247][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 247][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 247][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 247][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 247][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 247][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 248][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 248][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 248][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 248][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 248][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 248][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 248][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 248][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 248][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x1235304a x29=0xe4fff640 => x9=0x0
+[11:07:04 248][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 248][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 248][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 248][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x1203700d
+[11:07:04 248][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 248][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 248][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x8 => nzcv: N=0, Z=0, C=1, V=0 x22=0x7
+[11:07:04 248][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353048 => x21=0x1235304a
+[11:07:04 248][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 248][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x1203700d => w3=0xb x19=0x1203700e
+[11:07:04 248][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 248][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x1235304a => x0=0x1235304a
+[11:07:04 248][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 248][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 248][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x1203700e sp=0xe4fff530 => x28=0x8 x19=0x1203700e
+[11:07:04 248][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 248][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 248][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0xb x4=0x12260200 sp=0xe4fff530 => x3=0xb x4=0x12260200
+[11:07:04 248][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 248][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 248][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 248][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 248][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 248][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 249][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x1203700e => x19=0xe4fff708
+[11:07:04 249][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 249][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 249][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 249][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 249][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 249][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 249][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 249][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 249][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 249][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 249][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 249][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 249][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 249][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 249][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 249][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 249][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 249][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 249][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 249][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 249][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 249][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 249][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 249][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 249][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 249][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x1235304c x29=0xe4fff640 => x9=0x0
+[11:07:04 249][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 249][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 249][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 249][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x1203700e
+[11:07:04 250][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 250][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 250][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x7 => nzcv: N=0, Z=0, C=1, V=0 x22=0x6
+[11:07:04 250][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x1235304a => x21=0x1235304c
+[11:07:04 250][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 250][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x1203700e => w3=0xab x19=0x1203700f
+[11:07:04 250][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 250][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x1235304c => x0=0x1235304c
+[11:07:04 250][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 250][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 250][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x1203700f sp=0xe4fff530 => x28=0x8 x19=0x1203700f
+[11:07:04 250][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 250][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 250][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0xab x4=0x12260200 sp=0xe4fff530 => x3=0xab x4=0x12260200
+[11:07:04 250][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 250][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 250][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 250][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 250][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 250][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 251][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x1203700f => x19=0xe4fff708
+[11:07:04 251][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 251][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 251][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x1 => x12=0xffffffffffffffd8
+[11:07:04 251][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 251][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 251][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 251][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 251][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 251][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 251][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 251][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 251][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 251][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 251][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 251][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 251][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 251][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 251][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 251][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 251][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 251][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 251][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 251][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 251][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 252][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 252][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x1235304e x29=0xe4fff640 => x9=0x0
+[11:07:04 252][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 252][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 252][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 252][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x1203700f
+[11:07:04 252][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 252][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 252][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x6 => nzcv: N=0, Z=0, C=1, V=0 x22=0x5
+[11:07:04 252][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x1235304c => x21=0x1235304e
+[11:07:04 252][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 252][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x1203700f => w3=0x6a x19=0x12037010
+[11:07:04 252][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 252][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x1235304e => x0=0x1235304e
+[11:07:04 252][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 252][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 252][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037010 sp=0xe4fff530 => x28=0x8 x19=0x12037010
+[11:07:04 252][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 252][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 252][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x6a x4=0x12260200 sp=0xe4fff530 => x3=0x6a x4=0x12260200
+[11:07:04 252][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 252][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 252][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 252][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 252][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 252][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 253][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037010 => x19=0xe4fff708
+[11:07:04 253][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 253][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 253][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 253][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 253][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 253][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 253][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 253][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 253][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 253][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 253][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 253][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 253][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 253][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 253][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 253][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 253][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 253][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 253][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 253][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 253][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 253][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 253][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 253][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 253][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 253][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353050 x29=0xe4fff640 => x9=0x0
+[11:07:04 253][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 253][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 253][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 253][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037010
+[11:07:04 253][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 254][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 254][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x5 => nzcv: N=0, Z=0, C=1, V=0 x22=0x4
+[11:07:04 254][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x1235304e => x21=0x12353050
+[11:07:04 254][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 254][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037010 => w3=0x34 x19=0x12037011
+[11:07:04 254][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 254][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353050 => x0=0x12353050
+[11:07:04 254][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 254][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 254][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037011 sp=0xe4fff530 => x28=0x8 x19=0x12037011
+[11:07:04 254][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 254][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 254][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x34 x4=0x12260200 sp=0xe4fff530 => x3=0x34 x4=0x12260200
+[11:07:04 254][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 254][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 254][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 254][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 254][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 254][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 254][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037011 => x19=0xe4fff708
+[11:07:04 254][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 254][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 254][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 254][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 254][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 254][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 254][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 254][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 254][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 254][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 254][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 254][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 254][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 254][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 254][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 255][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 255][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 255][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 255][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 255][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 255][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 255][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 255][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 255][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 255][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 255][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353052 x29=0xe4fff640 => x9=0x0
+[11:07:04 255][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 255][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 255][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 255][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037011
+[11:07:04 255][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 255][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 255][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x4 => nzcv: N=0, Z=0, C=1, V=0 x22=0x3
+[11:07:04 255][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353050 => x21=0x12353052
+[11:07:04 255][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 256][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037011 => w3=0x74 x19=0x12037012
+[11:07:04 256][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 256][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353052 => x0=0x12353052
+[11:07:04 256][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 256][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 256][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037012 sp=0xe4fff530 => x28=0x8 x19=0x12037012
+[11:07:04 256][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 256][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 256][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x74 x4=0x12260200 sp=0xe4fff530 => x3=0x74 x4=0x12260200
+[11:07:04 256][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 256][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 256][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 256][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 256][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 256][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 256][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037012 => x19=0xe4fff708
+[11:07:04 256][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 256][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 256][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 256][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 256][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 256][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 256][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 256][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 257][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 257][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 257][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 257][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 257][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 257][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 257][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 257][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 257][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 257][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 257][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 257][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 257][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 257][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 257][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 257][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 261][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 261][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353054 x29=0xe4fff640 => x9=0x0
+[11:07:04 261][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 261][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 261][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 261][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037012
+[11:07:04 261][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 261][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 261][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x3 => nzcv: N=0, Z=0, C=1, V=0 x22=0x2
+[11:07:04 261][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353052 => x21=0x12353054
+[11:07:04 261][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 261][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037012 => w3=0x68 x19=0x12037013
+[11:07:04 261][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 261][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353054 => x0=0x12353054
+[11:07:04 261][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 262][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 262][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037013 sp=0xe4fff530 => x28=0x8 x19=0x12037013
+[11:07:04 262][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 262][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 262][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0x68 x4=0x12260200 sp=0xe4fff530 => x3=0x68 x4=0x12260200
+[11:07:04 262][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 262][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 262][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 262][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 262][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 262][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 262][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037013 => x19=0xe4fff708
+[11:07:04 262][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 262][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 262][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 262][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 262][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 262][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 262][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 262][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 262][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 262][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 262][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 262][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 262][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 262][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 262][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 262][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 262][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 262][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 262][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 262][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 262][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 262][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 263][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 263][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 263][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 263][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353056 x29=0xe4fff640 => x9=0x0
+[11:07:04 263][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 263][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 263][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 263][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037013
+[11:07:04 263][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 263][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 263][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x2 => nzcv: N=0, Z=0, C=1, V=0 x22=0x1
+[11:07:04 263][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353054 => x21=0x12353056
+[11:07:04 263][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=0, C=1, V=0
+[11:07:04 263][libmx.so 0x0d948] [63164038] 0x1200d948: "ldrb w3, [x19], #1" x19=0x12037013 => w3=0xcc x19=0x12037014
+[11:07:04 263][libmx.so 0x0d94c] [01008092] 0x1200d94c: "movn x1, #0" x1=0x0 => x1=0xffffffffffffffff
+[11:07:04 263][libmx.so 0x0d950] [e00315aa] 0x1200d950: "mov x0, x21" x21=0x12353056 => x0=0x12353056
+[11:07:04 263][libmx.so 0x0d954] [58000094] 0x1200d954: "bl #0x1200dab4"
+[11:07:04 263][libmx.so 0x0dab4] [ff8304d1] 0x1200dab4: "sub sp, sp, #0x120" sp=0xe4fff650 => sp=0xe4fff530
+[11:07:04 263][libmx.so 0x0dab8] [fc4f10a9] 0x1200dab8: "stp x28, x19, [sp, #0x100]" x28=0x8 x19=0x12037014 sp=0xe4fff530 => x28=0x8 x19=0x12037014
+[11:07:04 263][libmx.so 0x0dabc] [fd7b11a9] 0x1200dabc: "stp x29, x30, [sp, #0x110]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 263][libmx.so 0x0dac0] [fd430491] 0x1200dac0: "add x29, sp, #0x110" sp=0xe4fff530 => x29=0xe4fff640
+[11:07:04 263][libmx.so 0x0dac4] [e39308a9] 0x1200dac4: "stp x3, x4, [sp, #0x88]" x3=0xcc x4=0x12260200 sp=0xe4fff530 => x3=0xcc x4=0x12260200
+[11:07:04 263][libmx.so 0x0dac8] [e59b09a9] 0x1200dac8: "stp x5, x6, [sp, #0x98]" x5=0x122602c0 x6=0x1 sp=0xe4fff530 => x5=0x122602c0 x6=0x1
+[11:07:04 263][libmx.so 0x0dacc] [e75700f9] 0x1200dacc: "str x7, [sp, #0xa8]" x7=0xe4fff708 sp=0xe4fff530 => x7=0xe4fff708
+[11:07:04 263][libmx.so 0x0dad0] [e00700ad] 0x1200dad0: "stp q0, q1, [sp]" sp=0xe4fff530
+[11:07:04 263][libmx.so 0x0dad4] [e20f01ad] 0x1200dad4: "stp q2, q3, [sp, #0x20]" sp=0xe4fff530
+[11:07:04 263][libmx.so 0x0dad8] [e41702ad] 0x1200dad8: "stp q4, q5, [sp, #0x40]" sp=0xe4fff530
+[11:07:04 263][libmx.so 0x0dadc] [e61f03ad] 0x1200dadc: "stp q6, q7, [sp, #0x60]" sp=0xe4fff530
+[11:07:04 264][libmx.so 0x0dae0] [53d03bd5] 0x1200dae0: "mrs x19, tpidr_el0" x19=0x12037014 => x19=0xe4fff708
+[11:07:04 264][libmx.so 0x0dae4] [691640f9] 0x1200dae4: "ldr x9, [x19, #0x28]" x19=0xe4fff708 => x9=0x0
+[11:07:04 264][libmx.so 0x0dae8] [ea230291] 0x1200dae8: "add x10, sp, #0x88" sp=0xe4fff530 => x10=0xe4fff5b8
+[11:07:04 264][libmx.so 0x0daec] [ec048092] 0x1200daec: "movn x12, #0x27" x12=0x2 => x12=0xffffffffffffffd8
+[11:07:04 264][libmx.so 0x0daf0] [ab430091] 0x1200daf0: "add x11, x29, #0x10" x29=0xe4fff640 => x11=0xe4fff650
+[11:07:04 264][libmx.so 0x0daf4] [a9831ef8] 0x1200daf4: "stur x9, [x29, #-0x18]" x9=0x0 x29=0xe4fff640 => x9=0x0
+[11:07:04 264][libmx.so 0x0daf8] [e9030091] 0x1200daf8: "mov x9, sp" sp=0xe4fff530 => x9=0xe4fff530
+[11:07:04 264][libmx.so 0x0dafc] [0cf0dff2] 0x1200dafc: "movk x12, #0xff80, lsl #32" x12=0xffffffffffffffd8 => x12=0xffffff80ffffffd8
+[11:07:04 264][libmx.so 0x0db00] [4aa10091] 0x1200db00: "add x10, x10, #0x28" x10=0xe4fff5b8 => x10=0xe4fff5e0
+[11:07:04 264][libmx.so 0x0db04] [29010291] 0x1200db04: "add x9, x9, #0x80" x9=0xe4fff530 => x9=0xe4fff5b0
+[11:07:04 264][libmx.so 0x0db08] [a8e300d1] 0x1200db08: "sub x8, x29, #0x38" x29=0xe4fff640 => x8=0xe4fff608
+[11:07:04 264][libmx.so 0x0db0c] [abab3ca9] 0x1200db0c: "stp x11, x10, [x29, #-0x38]" x11=0xe4fff650 x10=0xe4fff5e0 x29=0xe4fff640 => x11=0xe4fff650 x10=0xe4fff5e0
+[11:07:04 264][libmx.so 0x0db10] [a9b33da9] 0x1200db10: "stp x9, x12, [x29, #-0x28]" x9=0xe4fff5b0 x12=0xffffff80ffffffd8 x29=0xe4fff640 => x9=0xe4fff5b0 x12=0xffffff80ffffffd8
+[11:07:04 264][libmx.so 0x0db14] [010140ad] 0x1200db14: "ldp q1, q0, [x8]" x8=0xe4fff608
+[11:07:04 264][libmx.so 0x0db18] [c30000b0] 0x1200db18: "adrp x3, #0x12026000" => x3=0x12026000
+[11:07:04 264][libmx.so 0x0db1c] [e20301aa] 0x1200db1c: "mov x2, x1" x1=0xffffffffffffffff => x2=0xffffffffffffffff
+[11:07:04 264][libmx.so 0x0db20] [63c82891] 0x1200db20: "add x3, x3, #0xa32" x3=0x12026000 => x3=0x12026a32
+[11:07:04 264][libmx.so 0x0db24] [a48301d1] 0x1200db24: "sub x4, x29, #0x60" x29=0xe4fff640 => x4=0xe4fff5e0
+[11:07:04 264][libmx.so 0x0db28] [e1031f2a] 0x1200db28: "mov w1, wzr" => w1=0x0
+[11:07:04 264][libmx.so 0x0db2c] [a1033dad] 0x1200db2c: "stp q1, q0, [x29, #-0x60]" x29=0xe4fff640
+[11:07:04 264][libmx.so 0x0db30] [bcfeff97] 0x1200db30: "bl #0x1200d620"
+[11:07:04 264][libmx.so 0x0d620] [30010090] 0x1200d620: "adrp x16, #0x12031000" => x16=0x12031000
+[11:07:04 264][libmx.so 0x0d624] [115247f9] 0x1200d624: "ldr x17, [x16, #0xea0]" x16=0x12031000 => x17=0x121f2214
+[11:07:04 264][libmx.so 0x0d628] [10823a91] 0x1200d628: "add x16, x16, #0xea0" x16=0x12031000 => x16=0x12031ea0
+[11:07:04 264][libmx.so 0x0d62c] [20021fd6] 0x1200d62c: "br x17" x17=0x121f2214
+[11:07:04 264][libmx.so 0x0db34] [681640f9] 0x1200db34: "ldr x8, [x19, #0x28]" x19=0xe4fff708 => x8=0x0
+[11:07:04 264][libmx.so 0x0db38] [a9835ef8] 0x1200db38: "ldur x9, [x29, #-0x18]" x9=0x12353058 x29=0xe4fff640 => x9=0x0
+[11:07:04 264][libmx.so 0x0db3c] [1f0109eb] 0x1200db3c: "cmp x8, x9" x9=0x0 => nzcv: N=0, Z=1, C=1, V=0 x8=0x0
+[11:07:04 264][libmx.so 0x0db40] [a1000054] 0x1200db40: "b.ne #0x1200db54" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 265][libmx.so 0x0db44] [fd7b51a9] 0x1200db44: "ldp x29, x30, [sp, #0x110]" x29=0xe4fff640 x30=0x1200db34 sp=0xe4fff530 => x29=0xe4fff680 x30=0x1200d958
+[11:07:04 265][libmx.so 0x0db48] [fc4f50a9] 0x1200db48: "ldp x28, x19, [sp, #0x100]" x28=0x8 x19=0xe4fff708 sp=0xe4fff530 => x28=0x8 x19=0x12037014
+[11:07:04 265][libmx.so 0x0db4c] [ff830491] 0x1200db4c: "add sp, sp, #0x120" sp=0xe4fff530 => sp=0xe4fff650
+[11:07:04 265][libmx.so 0x0db50] [c0035fd6] 0x1200db50: "ret"
+[11:07:04 265][libmx.so 0x0d958] [d60600f1] 0x1200d958: "subs x22, x22, #1" x22=0x1 => nzcv: N=0, Z=1, C=1, V=0 x22=0x0
+[11:07:04 265][libmx.so 0x0d95c] [b50a0091] 0x1200d95c: "add x21, x21, #2" x21=0x12353056 => x21=0x12353058
+[11:07:04 265][libmx.so 0x0d960] [41ffff54] 0x1200d960: "b.ne #0x1200d948" nzcv: N=0, Z=1, C=1, V=0
+[11:07:04 267][libmx.so 0x0d964] [e00314aa] 0x1200d964: "mov x0, x20" x20=0x12353030 => x0=0x12353030
+[11:07:04 269][libmx.so 0x0d968] [fd7b43a9] 0x1200d968: "ldp x29, x30, [sp, #0x30]" x29=0xe4fff680 x30=0x1200d958 sp=0xe4fff650 => x29=0xe4fff6f0 x30=0x1200e540
+[11:07:04 271][libmx.so 0x0d96c] [f44f42a9] 0x1200d96c: "ldp x20, x19, [sp, #0x20]" x20=0x12353030 x19=0x12037014 sp=0xe4fff650 => x20=0x116 x19=0xfffe1640
+[11:07:04 273][libmx.so 0x0d970] [f65741a9] 0x1200d970: "ldp x22, x21, [sp, #0x10]" x22=0x0 x21=0x12353058 sp=0xe4fff650 => x22=0x12034000 x21=0x564fabc8
+[11:07:04 274][libmx.so 0x0d974] [f70744f8] 0x1200d974: "ldr x23, [sp], #0x40" sp=0xe4fff650 => x23=0x12360000 sp=0xe4fff690
+[11:07:04 275][libmx.so 0x0d978] [c0035fd6] 0x1200d978: "ret"

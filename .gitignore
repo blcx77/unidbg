@@ -20,3 +20,5 @@
 /unidbg-android/src/test/resources/bili/
 /unidbg-android/src/test/resources/dianping/
 /unidbg-android/src/test/resources/zuiyou/
+*.apk
+*.ipa

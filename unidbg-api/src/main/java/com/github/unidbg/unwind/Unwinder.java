@@ -33,7 +33,7 @@ public abstract class Unwinder {
         boolean hasTrace = false;
 
         Frame frame = null;
-        while((frame = unw_step(emulator, frame)) != null) {
+        while ((frame = unw_step(emulator, frame)) != null) {
             if (frame.isFinish()) {
                 if (!hasTrace) {
                     System.out.println("Decode backtrace finish");
@@ -81,4 +81,16 @@ public abstract class Unwinder {
         System.out.println(sb);
     }
 
+    // add
+    public final int depth() {
+        int count = 0;
+        Frame frame = null;
+        while ((frame = unw_step(emulator, frame)) != null) {
+            if (frame.isFinish()) {
+                return count;
+            }
+            count++;
+        }
+        return count;
+    }
 }
