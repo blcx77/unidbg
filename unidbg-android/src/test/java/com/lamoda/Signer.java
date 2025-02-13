@@ -75,8 +75,21 @@ public class Signer extends AbstractJni implements IOResolver {
 //        traceFunction();
         hookMemcpy();
 //        emulator.traceWrite(0xe4fff330L, 0xe4fff330L);
-        emulator.traceWrite(0x12089110L, 0x12089110L);
-        emulator.attach().addBreakPoint(module.base + 0x1A24);
+//        emulator.traceWrite(0x12089110L, 0x12089110L);
+//        emulator.attach().addBreakPoint(module.base+0xb80);
+//        emulator.attach().addBreakPoint(module.base + 0x1A24);
+//        emulator.attach().addBreakPoint(module.base + 0x7AEDC);   // 取其arg0
+//        emulator.attach().addBreakPoint(module.base + 0x7B278);   // 取X20
+//        emulator.attach().addBreakPoint(module.base + 0x1DBC, new BreakPointCallback() {
+//            @Override
+//            public boolean onHit(Emulator<?> emulator, long address) {
+//                System.out.println("0x1DBC这个地址调用了一次");
+//                return true;
+//            }
+//        });
+//        emulator.traceWrite(0xe4fff270L, 0xe4fff270L);
+//        emulator.traceWrite(0xbffff270L, 0xbffff270L);
+        emulator.traceWrite(0xe4fff250L, 0xe4fff250L);
         NativeLibHelper = vm.resolveClass("com.adjust.sdk.sig.NativeLibHelper").newObject(null);
     }
 
