@@ -64,33 +64,21 @@ public class Signer extends AbstractJni implements IOResolver {
         vm.setVerbose(true); // 打印日志
         emulator.getSyscallHandler().addIOResolver(this);// 设置文件处理器
 
-//        traceCode();
-//        traceFunction();
         DalvikModule dm = vm.loadLibrary("signer", true); // 加载 libsigner.so，Unidbg 会到 apk 的 lib/arm64-v8a 下寻找。
         module = dm.getModule(); //获取目标模块的句柄
 
 
         dm.callJNI_OnLoad(emulator); // 调用目标 SO 的 JNI_OnLoad
-        // 构造调用目标函数的对象
-//        traceFunction();
-        hookMemcpy();
-//        emulator.traceWrite(0xe4fff330L, 0xe4fff330L);
-//        emulator.traceWrite(0x12089110L, 0x12089110L);
-//        emulator.attach().addBreakPoint(module.base+0xb80);
-//        emulator.attach().addBreakPoint(module.base + 0x1A24);
-//        emulator.attach().addBreakPoint(module.base + 0x7AEDC);   // 取其arg0
-//        emulator.attach().addBreakPoint(module.base + 0x7B278);   // 取X20
-//        emulator.attach().addBreakPoint(module.base + 0x1DBC, new BreakPointCallback() {
-//            @Override
-//            public boolean onHit(Emulator<?> emulator, long address) {
-//                System.out.println("0x1DBC这个地址调用了一次");
-//                return true;
-//            }
-//        });
-//        emulator.traceWrite(0xe4fff270L, 0xe4fff270L);
-//        emulator.traceWrite(0xbffff270L, 0xbffff270L);
-        emulator.traceWrite(0xe4fff250L, 0xe4fff250L);
         NativeLibHelper = vm.resolveClass("com.adjust.sdk.sig.NativeLibHelper").newObject(null);
+
+        emulator.traceWrite(0xe4fff330L, 0xe4fff330L);
+        emulator.traceWrite(0xe4fff331L, 0xe4fff331L);
+
+        hookSub1A24();
+
+        emulator.attach().addBreakPoint(module.base + 0x1a24);
+
+        emulator.traceWrite(0x12089110L, 0x12089110L);
     }
 
     public byte[] callNsign() {
@@ -356,6 +344,20 @@ public class Signer extends AbstractJni implements IOResolver {
                 UnidbgPointer src = emulator.getContext().getPointerArg(1);
                 int n = emulator.getContext().getIntArg(2);
                 Inspector.inspect(src.getByteArray(0, n), "memcpy source:" + src);
+                return true;
+            }
+        });
+    }
+
+    public void hookSub1A24() {
+        emulator.attach().addBreakPoint(module.base + 0x1A24, new BreakPointCallback() {
+            @Override
+            public boolean onHit(Emulator<?> emulator, long address) {
+                UnidbgPointer arg0 = emulator.getContext().getPointerArg(0);
+                System.out.println("===========hookSub1A24===========");
+                System.out.println(arg0.peer);
+                UnidbgPointer arg1 = emulator.getContext().getPointerArg(1);
+                System.out.println(arg1.peer);
                 return true;
             }
         });
