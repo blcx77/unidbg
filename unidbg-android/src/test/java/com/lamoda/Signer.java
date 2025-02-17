@@ -19,6 +19,7 @@ import com.github.unidbg.unwind.Unwinder;
 import com.github.unidbg.utils.Inspector;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import unicorn.Arm64Const;
 
 import javax.crypto.Mac;
 import java.io.File;
@@ -76,9 +77,10 @@ public class Signer extends AbstractJni implements IOResolver {
 
         hookSub1A24();
 
-        emulator.attach().addBreakPoint(module.base + 0x1a24);
+//        emulator.attach().addBreakPoint(module.base + 0x1a24);
 
         emulator.traceWrite(0x12089110L, 0x12089110L);
+        hookSub7AB08();
     }
 
     public byte[] callNsign() {
@@ -332,7 +334,7 @@ public class Signer extends AbstractJni implements IOResolver {
     }
 
     public static void main(String[] args) {
-        Logger.getLogger(DalvikVM64.class).setLevel(Level.DEBUG);
+//        Logger.getLogger(DalvikVM64.class).setLevel(Level.DEBUG);
         Signer signer = new Signer();
         signer.callNsign();
     }
@@ -361,6 +363,29 @@ public class Signer extends AbstractJni implements IOResolver {
                 return true;
             }
         });
+    }
+
+    public void hookSub7AB08() {
+        // Sha256Update
+        emulator.attach().addBreakPoint(module.base + 0x7AB08, new BreakPointCallback() {
+            @Override
+            public boolean onHit(Emulator<?> emulator, long address) {
+                UnidbgPointer data = UnidbgPointer.register(emulator, Arm64Const.UC_ARM64_REG_X1);
+                int length = emulator.getContext().getIntArg(2);
+                Inspector.inspect(data.getByteArray(0, length), "sha256 update:" + data);
+                return true;
+            }
+        });
+
+        // Sha256Final
+        emulator.attach().addBreakPoint(module.base + 0x7AEDC, new BreakPointCallback() {
+            @Override
+            public boolean onHit(Emulator<?> emulator, long address) {
+                System.out.println("sha256 final");
+                return true;
+            }
+        });
+
     }
 
 }
